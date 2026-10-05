@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RiderX — Bike Accessories</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">RIDER<span>X</span></a>
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#products">Accessories</a>
+      <a href="#brands">Brands</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="cartBtn" aria-label="Cart">🛒<b id="cartCount">0</b></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">PREMIUM BIKE ACCESSORIES</p>
+        <h1>Upgrade Your<br><span>Ride.</span></h1>
+        <p class="hero-text">Quality accessories for commuters, street riders, tourers and performance bikes.</p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#products">Shop Accessories</a>
+          <a class="btn ghost" href="#about">Why RiderX?</a>
+        </div>
+      </div>
+      <div class="hero-bike">
+        <div class="wheel wheel-a"></div>
+        <div class="wheel wheel-b"></div>
+        <div class="bike-body"></div>
+        <div class="bike-seat"></div>
+        <div class="bike-handle"></div>
+        <div class="bike-light"></div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="section-head">
+        <p class="eyebrow">SHOP BY CATEGORY</p>
+        <h2>Everything your bike needs</h2>
+      </div>
+      <div class="category-grid">
+        <button class="category-card" data-category="Protection"><span>🛡️</span><strong>Protection</strong><small>Guards & covers</small></button>
+        <button class="category-card" data-category="Lighting"><span>💡</span><strong>Lighting</strong><small>LEDs & indicators</small></button>
+        <button class="category-card" data-category="Comfort"><span>🏍️</span><strong>Comfort</strong><small>Seats & grips</small></button>
+        <button class="category-card" data-category="Utility"><span>🎒</span><strong>Utility</strong><small>Bags & mounts</small></button>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="section-head row">
+        <div>
+          <p class="eyebrow">POPULAR PICKS</p>
+          <h2>Featured accessories</h2>
+        </div>
+        <div class="filters">
+          <button class="filter active" data-filter="All">All</button>
+          <button class="filter" data-filter="Protection">Protection</button>
+          <button class="filter" data-filter="Lighting">Lighting</button>
+          <button class="filter" data-filter="Comfort">Comfort</button>
+          <button class="filter" data-filter="Utility">Utility</button>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="offer" id="about">
+      <div>
+        <p class="eyebrow">RIDERX PROMISE</p>
+        <h2>Built for every journey.</h2>
+        <p>From daily city rides to weekend highway trips, choose practical accessories designed around real riders.</p>
+      </div>
+      <div class="promise-grid">
+        <div><b>01</b><span>Bike-friendly fit</span></div>
+        <div><b>02</b><span>Quality materials</span></div>
+        <div><b>03</b><span>Easy installation</span></div>
+        <div><b>04</b><span>Fast support</span></div>
+      </div>
+    </section>
+
+    <section class="brands" id="brands">
+      <p class="eyebrow">COMPATIBLE WITH</p>
+      <h2>Popular bike brands</h2>
+      <div class="brand-list">
+        <span>BAJAJ</span><span>YAMAHA</span><span>HONDA</span><span>TVS</span><span>ROYAL ENFIELD</span><span>HERO</span><span>KTM</span><span>SUZUKI</span>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div>
+      <a href="#" class="logo">RIDER<span>X</span></a>
+      <p>Accessories for every kind of rider.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#products">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Support</a>
+    </div>
+    <p>© 2026 RiderX</p>
+  </footer>
+
+  <div class="cart-panel" id="cartPanel">
+    <div class="cart-header"><h3>Your Cart</h3><button id="closeCart">✕</button></div>
+    <div id="cartItems" class="cart-items"><p class="empty">Your cart is empty.</p></div>
+    <div class="cart-total"><span>Total</span><strong id="cartTotal">₹0</strong></div>
+    <button class="btn primary checkout" id="checkout">Checkout</button>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
